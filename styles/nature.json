@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+	"title": "Nature",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#228B22",
+					"name": "Forest green"
+				},
+				{
+					"slug": "secondary",
+					"color": "#8B4513",
+					"name": "Dirt brown"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#87CEEB",
+					"name": "Sky blue"
+				},
+				{
+					"slug": "quaternary",
+					"color": "#556B2F",
+					"name": "Moss green"
+				},
+                {
+                    "slug": "white",
+                    "color": "#FFFFF0",
+                    "name": "Ivory white"
+                }
+			]
+		},
+		"typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Georgia, sans-serif",
+                    "slug": "georgia",
+                    "name": "Georgia"
+                },
+                {
+                    "fontFamily": "Trebuchet MS, sans-serif",
+                    "slug": "trebuchet-ms",
+                    "name": "Trebuchet MS"
+                }
+            ]
+        }
+	},
+    "styles": {
+        "color": {
+            "text": "var(--wp--preset--color--black)",
+            "background": "#fff"
+        }
+    }
+}

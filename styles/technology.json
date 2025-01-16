@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Technology",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#007BFF",
+					"name": "Electric blue"
+				},
+				{
+					"slug": "secondary",
+					"color": "#343A40",
+					"name": "Anthracite grey"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#28A745",
+					"name": "Neon green"
+				},
+				{
+					"slug": "quaternary",
+					"color": "#C0C0C0",
+					"name": "Silver metal"
+				}
+			]
+		},
+		"typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Montserrat, sans-serif",
+                    "slug": "montserrat",
+                    "name": "Montserrat"
+                },
+                {
+                    "fontFamily": "Verdana, sans-serif",
+                    "slug": "verdana",
+                    "name": "Verdana"
+                }
+            ]
+        }
+	},
+    "styles": {
+        "color": {
+            "text": "#fff",
+            "background": "var(--wp--preset--color--black)"
+        }
+    }
+}

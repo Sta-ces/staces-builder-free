@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+	"title": "Communication",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#00AEEF",
+					"name": "Sky blue"
+				},
+				{
+					"slug": "secondary",
+					"color": "#D3D3D3",
+					"name": "Light grey"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#FF6600",
+					"name": "Vibrant orange"
+				},
+				{
+					"slug": "quaternary",
+					"color": "#3EB489",
+					"name": "Mint green"
+				},
+                {
+                    "slug": "black",
+                    "color": "#333333",
+                    "name": "Black"
+                }
+			]
+		},
+		"typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Helvetica, sans-serif",
+                    "slug": "helvetica",
+                    "name": "Helvetica"
+                },
+                {
+                    "fontFamily": "Tahoma, sans-serif",
+                    "slug": "tahoma",
+                    "name": "Tahoma"
+                }
+            ]
+        }
+	},
+    "styles": {
+        "color": {
+            "text": "var(--wp--preset--color--black)",
+            "background": "#fff"
+        }
+    }
+}

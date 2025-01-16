@@ -1,0 +1,142 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "appearanceTools": true,
+        "layout": {
+            "contentSize": "1024px",
+            "wideSize": "1200px"
+        },
+		"shadow": {
+			"defaultPresets": true
+		},
+        "color": {
+            "custom": true,
+            "link": true,
+            "customDuotone": true,
+            "customGradient": true,
+            "palette": [
+                {
+                    "name": "Orange",
+                    "slug": "primary",
+                    "color": "#f7941e"
+                },
+                {
+                    "name": "Dark orange",
+                    "slug": "secondary",
+                    "color": "#bc4400"
+                },
+                {
+                    "name": "Grey",
+                    "slug": "grey",
+                    "color": "#818181"
+                },
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#1b1b1b"
+                },
+                {
+                    "name": "Light grey",
+                    "slug": "light-grey",
+                    "color": "#e6e6e6"
+                }
+            ],
+            "gradients": [
+                {
+                    "name": "Background to transparent",
+                    "slug": "background-to-transparent",
+                    "gradient": "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 90%, rgb(255,255,255) 100%)"
+                }
+            ]
+        },
+        "border": {
+            "radius": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "typography": {
+            "lineHeight": true,
+            "fluid": true,
+			"writingMode": true,
+			"textColumns": true,
+            "fontFamilies": [
+                {
+                    "fontFamily": "Montserrat, sans-serif",
+                    "slug": "montserrat",
+                    "name": "Montserrat"
+                },
+                {
+                    "fontFamily": "Avenir, sans-serif",
+                    "slug": "avenir",
+                    "name": "Avenir"
+                }
+            ]
+        },
+        "blocks": {
+            "core/cover": {
+                "appearanceTools": true,
+                "background": {
+                    "backgroundSize": true,
+                    "backgroundImage": true
+                },
+                "position": {
+                    "sticky": true
+                }
+            },
+            "core/video": {
+                "layout": {
+                    "allowEditing": true,
+                    "contentSize": "var(--wp--style--global--content-size)"
+                }
+            },
+            "core/separator": {
+                "appearanceTools": true
+            },
+            "core/button": {
+                "appearanceTools": true,
+                "color": {
+                    "custom": true,
+                    "link": true
+                },
+                "border": {
+                    "color": true,
+                    "radius": true,
+                    "style": true,
+                    "width": true
+                }
+            },
+            "core/details": {
+                "border": {
+                    "radius": true
+                }
+            },
+            "core/navigation": {
+                "appearanceTools": true,
+                "color": {
+                    "custom": true,
+                    "link": true
+                }
+            }
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--avenir)",
+            "fontSize": "var(--wp--preset--font-size--medium)"
+        },
+        "color": {
+            "text": "var(--wp--preset--color--black)",
+            "background": "#fff"
+        },
+        "elements": {
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--primary)"
+                }
+            }
+        }
+    }
+}
