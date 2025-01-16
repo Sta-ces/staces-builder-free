@@ -1,14 +1,11 @@
 {
   "devDependencies": {
-    "@wordpress/scripts": "^30.3.0",
     "babel-runtime": "^6.26.0",
     "rtlcss-webpack-plugin": "^4.0.7",
     "sass": "^1.79.5",
     "uglifyjs-folder": "^3.3.0"
   },
   "scripts": {
-    "build:scripts": "wp-scripts build",
-    "watch-build-scripts": "wp-scripts start",
     "minify:js": "uglifyjs-folder ./assets/src -eo ./assets/js",
     "minify:css": "sass --style=compressed ./assets/src:./assets/css",
     "minify:all": "minify:js && minify:css"
