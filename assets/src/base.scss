@@ -43,16 +43,6 @@ body {
     scroll-behavior: smooth;
 }
 /* END SCROLLBAR CUSTOM */
-.alignwide{
-    margin-left: -80px;
-    margin-right: -80px;
-    max-width: 100vw;
-}
-.alignfull{
-    margin-left: calc(-99vw / 2 + 99% / 2);
-    margin-right: calc(-99vw / 2 + 99% / 2);
-    max-width: 100vw;
-}
 .wp-block{ max-width: 100%; }
 body.no-scroll{ overflow-y: hidden; }
 body:not(.wp-admin), body:not(.wp-admin) *{
