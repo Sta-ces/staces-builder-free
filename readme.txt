@@ -28,6 +28,9 @@ Yes, this theme has been tested with WordPress 6.3.
 The theme requires PHP 8.0 or higher for optimal performance.
 
 == Changelog ==
+= 4.6 =
+* Fix horizontal scrollbar
+* Remove alignfull css class
 = 4.5 =
 * Bug fixing.
 = 4.4 =
