@@ -6,6 +6,20 @@
  */
 class STHCustomizer
 {
+	/**
+     * Creates a new control in WordPress customizer
+     * 
+     * @param WP_Customize_Manager $wp Customization manager instance
+     * @param string $name Unique control identifier
+     * @param array $args Configuration arguments
+     *      @type string $label Control label (required)
+     *      @type string $section Control section (required)
+     *      @type mixed $default Default value
+     *      @type string $transport Refresh method ('refresh' or 'postMessage')
+     *      @type string $type Control type ('text', 'color', 'image', etc.)
+     *      @type array $section_args Optional section arguments
+     * @return boolean True if control was created, False otherwise
+     */
     function __construct($wp, $name, $args){
         if(!isset($args['label']) || !isset($args['section'])) return false;
         $args = array_merge([
