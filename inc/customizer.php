@@ -58,25 +58,26 @@ class STHCustomizer
         return true;
 	}
 }
-class WP_Customize_Range_Control extends WP_Customize_Control{
-    public $type = 'custom_range';
-    public function render_content(){ ?>
-        <label>
-            <?php if ( ! empty( $this->label )) : ?>
-                <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
-            <?php endif; ?>
-            <?php if ( ! empty( $this->description )) : ?>
-                <span class="description customize-control-description"><?php echo $this->description; ?></span>
-            <?php endif; ?>
-            <div style="display:flex;">
-				<div style="margin-right:10px;"><span><?php echo isset($this->input_attrs['prefix']) ? $this->input_attrs['prefix'] : ""; ?></span><span class="cs-range-value"><?php echo esc_attr($this->value()); ?></span><span><?php echo isset($this->input_attrs['suffix']) ? $this->input_attrs['suffix'] : ""; ?></span></div>
-            	<input data-input-type="range" type="range" <?php $this->input_attrs(); ?> value="<?php echo esc_attr($this->value()); ?>" <?php $this->link(); ?> oninput="this.previousElementSibling.querySelector('.cs-range-value').innerHTML = this.value" />
-			</div>
-        </label>
-        <?php
-    }
-}
 function stth_customize_register( $wp_customize ) {
+	class WP_Customize_Range_Control extends WP_Customize_Control{
+		public $type = 'custom_range';
+		public function render_content(){ ?>
+			<label>
+				<?php if ( ! empty( $this->label )) : ?>
+					<span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
+				<?php endif; ?>
+				<?php if ( ! empty( $this->description )) : ?>
+					<span class="description customize-control-description"><?php echo $this->description; ?></span>
+				<?php endif; ?>
+				<div style="display:flex;">
+					<div style="margin-right:10px;"><span><?php echo isset($this->input_attrs['prefix']) ? $this->input_attrs['prefix'] : ""; ?></span><span class="cs-range-value"><?php echo esc_attr($this->value()); ?></span><span><?php echo isset($this->input_attrs['suffix']) ? $this->input_attrs['suffix'] : ""; ?></span></div>
+					<input data-input-type="range" type="range" <?php $this->input_attrs(); ?> value="<?php echo esc_attr($this->value()); ?>" <?php $this->link(); ?> oninput="this.previousElementSibling.querySelector('.cs-range-value').innerHTML = this.value" />
+				</div>
+			</label>
+			<?php
+		}
+	}
+	
 	require_once(ABSPATH . 'wp-admin/includes/plugin.php');
 	// REMOVE CONTROLS
 	$wp_customize->remove_section('static_front_page');
