@@ -61,7 +61,7 @@ function shortcodes_init(){
    add_shortcode('sitename', 'sitename_shortcode');
    add_shortcode('birth', 'get_birth');
 	add_shortcode('tag', 'tag_shortcode');
-   add_shortcode('icon', 'icon_displayer');
+   if(!shortcode_exists('icon')) add_shortcode('icon', 'icon_displayer');
    if(function_exists("shortcodes_child")) shortcodes_child();
 }
 add_action('init', 'shortcodes_init');
