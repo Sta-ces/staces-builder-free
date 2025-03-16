@@ -15,6 +15,7 @@ require_theme_path( '/inc/infoth-manager.php' );
 require_theme_path( '/inc/customizer.php' );
 require_theme_path( '/inc/settings.php' );
 require_theme_path( '/inc/scriptsIncluder.php' );
+require_theme_path( '/inc/shortcodes.php' );
 require_theme_path( '/child-functions.php' );
 function page_closed() {
 	if (!(isAdmin() || isEditor()) && get_infoth('is-close') && !is_page(get_infoth("close-page"))){
